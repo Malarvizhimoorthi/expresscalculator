@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate</title>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#container{
+    max-width: 800px;
+    background-color: rgb(109, 105, 105);
+    border-radius: 10%;
+    padding-bottom: 30px;
+  
+}
+#inputbox{
+    font-size: 20px;
+    padding: 35px;
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: rgb(231, 237, 241);
+    color: black;
+    border-radius: 20px;
+}
+#keys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px 10px 0;
+    gap: 15px;
+}
+button{
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: rgba(233, 227, 222, 0.764);
+    color: rgb(53, 52, 51);
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(74, 122, 225, 0.832);
+}
+.actionbutton{
+    background-color: rgb(196, 191, 187);
+}
+.actionbutton:hover{
+    background-color: rgb(12, 67, 176);
+}
+</style>
+</head>
+<body>
+    <header></header>
+    <main action="calculate" method="post">
+        <div id="container">
+            <input type="text" id="inputbox">
+            <div id="keys">
+                <button onclick="remove('')">AC</button>
+                <button onclick="delet('')">&#9003;</button>
+                <button onclick="display('/')" action="division" method="post">/</button>
+                <button onclick="display('*')" action="multipilication" method="post">*</button>
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button>
+                <button onclick="display('-')" action="subtraction" method="post">-</button>
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button onclick="display('+')" action="addition" method="post">+</button>
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button onclick="display('0')">0</button>
+                <button onclick="display('.')">.</button>
+                <button onclick="calculate()">=</button>
+
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+<script src="Indexx.js"></script>
+</body>
+</html>
